@@ -10,8 +10,32 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>[What is an array? A short and concise answer is expected here!]</li>
+      <p>[An array is a data structure that stores a collection of elements, each identified by an index or key. Arrays are ordered and allow for efficient access to elements by their position.]</p>
+      <2i>[What does it mean to "hardcode" when we talk about programming? (In English, it's called "hard
+coding", "hard-coding", or "hardcoding").]</li>
+      <p>[Hardcoding refers to embedding values directly into the source code rather than using variables or external configuration files. This makes the code less flexible and harder to maintain.]</p>
+      <3i>[Explain in plain text what happens in task 3, and how we can traverse (iterate) the array when we
+(humans) don't "know" how long the array is.]</li>
+      <p>[In task 3, we split a string into an array of words. To traverse the array without knowing its length, we use a loop that continues until the index reaches the array's length. This allows us to access each element safely.]</p>
+      <4i>[Why is it beneficial to store instances of a class in arrays, as in task 4?]</li>
+      <p>[Storing instances of a class in arrays allows for easy management and manipulation of multiple objects of the same type. It enables efficient iteration over all objects, simplifies data handling, and supports operations like sorting or filtering based on object properties.]</p>
+      <5i>[Try your best to explain the EWeekDays object from task 7. How do we use the "value" attribute, for
+example? In what way do "WeekDay", "Workdays", and "Weekends" differ from each other? If we
+wanted to create a new element "WorkoutDays", which would contain "Monday", "Wednesday", and
+"Thursday", how would it ideally look? (I will choose the best answer to this task and reward it with
+pizza in the cafeteria right after New Year. Remember to mark in your submission if you want to
+participate in the competition!)</li>
+      <p>[The EWeekDays object uses bitwise flags to represent different days of the week. The "value" attribute represents a unique bit pattern for each day or group of days. "WeekDay" entries represent individual days, while "Workdays" and "Weekends" are combinations of these individual days. To create "WorkoutDays", we would define it as: WorkoutDays: { value: 0x01 + 0x04 + 0x08, name: "Workout Days" }]</p>
+      <6i>[In task 8, we will use a "callback" routine when sorting. Explain how such a "callback" routine works.]</li>
+      <p>[A callback routine is a function passed as an argument to another function. In sorting, the callback determines the comparison logic between elements. It receives two arguments (a and b) and returns a negative value if a should come before b, zero if they are equal, or a positive value if a should come after b.]</p>
+      <7i>[What happens in the sorting routines you have created? Try to explain how the array can figure out
+if an element should come before or after another. The best way to answer this is to actually print
+both parameters each time the sorting routine runs.]</li>
+      <p>[In the sorting routines, the callback function is called repeatedly with pairs of elements from the array. The function compares these elements and returns a value indicating their relative order. The array uses this return value to determine whether to swap the elements or keep them in their current positions.]</p>
+      <8i>[In task 10, we will create an array with rows and columns. Explain what the first element of the array
+contains.</li>
+      <p>[The first element of the array contains the first row of the 2D array, which itself is an array of elements in that row.]</p>
     </ol>
     <script type="module" src="./task_4-2.mjs" defer></script>
   </body>
